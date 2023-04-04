@@ -1,0 +1,132 @@
+#main-form{
+    background-color: rgb(211, 220, 220);
+    margin:0px;
+    border: 0px;
+    border-radius: 10px;
+    text-align: left;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#main-formdetails,#main-formdetails2,#main-formdetails3{
+    margin: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.Qdiv{
+    border: 2px;
+    border-radius: 10px;
+    background-color: rgb(244, 238, 239);
+    width: 100%;
+    max-width: 800px;
+    flex: 1;
+    min-width: 200px;
+    font-size: 16px;
+}
+
+.Qdiv > h9,form,label, input,select{
+    margin-left: 10px;
+}
+
+.inputradio{
+    width:30px;
+    height: 10px;
+}
+
+#drag{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(244, 238, 239);
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust the font size of the Qdiv container and the labels inside */
+    .Qdiv {
+        font-size: 14px;
+    }
+    
+    /* Adjust the margin of the main-formdetails elements */
+    #main-formdetails,#main-formdetails2,#main-formdetails3 {
+        margin: 10px;
+        margin-left: 20px;
+    }
+    
+    /* Make the input fields and labels full width */
+    form,label, input,select {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    /* Adjust the size of the radio buttons */#main-form{
+    background-color: rgb(211, 220, 220);
+    margin:10px;
+    border: 2px;
+    border-radius: 20px;
+    text-align: left;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#main-formdetails,#main-formdetails2,#main-formdetails3{
+   margin :20px;
+   margin-left: 20px ;
+   padding: 10px;
+}
+
+.Qdiv{
+    border: 2px;
+    border-radius: 10px;
+    background-color: rgb(244, 238, 239);
+    width: 100%;
+    max-width: 800px;
+    flex: 1;
+    min-width: 200px;
+    font-size: 16px;
+}
+
+.Qdiv > h9, form, label, input, select{
+    margin-left: 10px;
+}
+
+/* .inputradio{
+    width: 30px;
+    height: 10px;
+} */
+
+#drag{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(244, 238, 239);
+}
+
+@media screen and (max-width: 768px) {
+    #main-form {
+        flex-direction: column;
+    }
+  
+    .Qdiv {
+        font-size: 14px;
+    }
+}
+    /* .inputradio {
+        width: 20px;
+        height: 20px;
+    } */
+    .header {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .center {
+        margin: 20px 0;
+      }
+    
+      .project-overview {
+        text-align: center;
+      }
+}
