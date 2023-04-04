@@ -93,10 +93,10 @@
     margin-left: 10px;
 }
 
-/* .inputradio{
+.inputradio{
     width: 30px;
     height: 10px;
-} */
+}
 
 #drag{
     text-align: center;
@@ -113,10 +113,10 @@
         font-size: 14px;
     }
 }
-    /* .inputradio {
+    .inputradio {
         width: 20px;
         height: 20px;
-    } */
+    }
     .header {
         flex-direction: column;
         align-items: center;

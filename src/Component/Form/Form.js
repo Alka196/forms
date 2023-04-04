@@ -3,11 +3,28 @@ import React , {useState}from 'react';
 import "./Form.css";
 
 function Form() {
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOptionQ1, setSelectedOptionQ1] = useState('');
 
     const handleOptionChange = (event) => {
-      setSelectedOption(event.target.value);
+      setSelectedOptionQ1(event.target.value);
     }
+
+    const [selectedOptionQ2, setSelectedOptionQ2] = useState('');
+
+    const handleOptionChange2 = (event) => {
+      setSelectedOptionQ2(event.target.value);
+    }
+    const [selectedOptionQ3, setSelectedOptionQ3] = useState('');
+
+    const handleOptionChange3 = (event) => {
+      setSelectedOptionQ3(event.target.value);
+    }
+    const [selectedOptionQ4, setSelectedOptionQ4] = useState('');
+
+    const handleOptionChange4 = (event) => {
+      setSelectedOptionQ4(event.target.value);
+    }
+   
 
     const [selectedFile, setSelectedFile] = useState(null);
 
@@ -38,7 +55,7 @@ function Form() {
                         <div className="Qdiv">
                         <h9>Question 1</h9><hr />
                         <label htmlFor="dropdown" className="required"><h9><bold> Please select your sourcing option: </bold></h9></label><br></br>
-                            <select id="dropdown" value={selectedOption} onChange={handleOptionChange} style={{width:"250px",borderRadius:"5px",height:"30px"}}>
+                            <select id="dropdown" value={selectedOptionQ1} onChange={handleOptionChange} style={{width:"250px",borderRadius:"5px",height:"30px"}}>
                                 <option value="">Choose sourcing</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -49,7 +66,7 @@ function Form() {
                             <div className="Qdiv">
                             <h9 >Question 2</h9><hr />
                         <label htmlFor="dropdown" className="required">Please select your sourcing option:</label><br></br>
-                            <select id="dropdown" value={selectedOption} onChange={handleOptionChange} style={{width:"250px",borderRadius:"5px",height:"30px"}}>
+                            <select id="dropdown" value={selectedOptionQ2} onChange={handleOptionChange2} style={{width:"250px",borderRadius:"5px",height:"30px"}}>
                                 <option value="">Choose users range</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -60,7 +77,7 @@ function Form() {
                             <div className="Qdiv">
                             <h9>Question 3</h9><hr />
                         <label htmlFor="dropdown" >Provide an expected spend:</label><br></br>
-                            <select id="dropdown" value={selectedOption} onChange={handleOptionChange} style={{width:"250px",borderRadius:"5px",height:"30px"}}>
+                            <select id="dropdown" value={selectedOptionQ3} onChange={handleOptionChange3} style={{width:"250px",borderRadius:"5px",height:"30px"}}>
                                 <option value="">Choose expense range</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
@@ -94,7 +111,7 @@ function Form() {
                             <div className="Qdiv">
                             <h9>Question 5</h9><hr />
                         <label htmlFor="dropdown" className="required">What type of PII will the vendor have access to?</label><br></br>
-                            <select id="dropdown" value={selectedOption} onChange={handleOptionChange}style={{width:"250px",borderRadius:"5px",height:"30px"}}>
+                            <select id="dropdown" value={selectedOptionQ4} onChange={handleOptionChange4}style={{width:"250px",borderRadius:"5px",height:"30px"}}>
                                 <option value="">Choose one or more PII type</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
